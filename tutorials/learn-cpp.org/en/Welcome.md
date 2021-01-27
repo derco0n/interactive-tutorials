@@ -22,6 +22,7 @@ learn-cpp.org is still under construction - If you wish to contribute tutorials,
 ### Advanced
 - [[Pointers]]
 - [[Structures]]
+- [[Classes]]
 - [[Function arguments by reference]]
 - [[Dynamic allocation]]
 - [[Recursion]]

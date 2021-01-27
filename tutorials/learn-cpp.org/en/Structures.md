@@ -4,19 +4,32 @@ Tutorial
 ###  What is a structure
 
 If you start programming code in C++ you'll sooner or later be facing a situation in which you'll need to store coherent data in a structured way.
-This is where structures come in place...
+This is what structures are beeing used for.
 
-A structure is basically a user-defined datatype which consists of other datatypes like int, char, etc. ...
+A structure is basically a user-defined datatype which consists of other datatypes like int, char and alike which are related with each other and may also contain functions.
+
+### difference compared to a class
+Classes are a concept of an object-orientated language like C++.
+Unlike classes, structures also exist in pure C. It is logical, that C++ provides structures for backwards compatibility.
+
+The only technical difference between a structure and a class is that every member of a struct is public by default whereas every class-member is private by default.
+However you can make struct-members private just as you can make a class-members public by using the access-modifiers "public" and "private".
+
+It has been agreed, that structs are usually used to store small passive data with none or few own functionality, whereas classes are used for larger and more complex data-structures which provide more functionality. - But keep in mind that this is just a convention and there is no technical limitation on this.
 
 ### Defining a structure
     //This is how you'll usually define a structure    
     using namespace std;
     struct MyOwnStructure { // keyword "struct" followed by a name, followed by braces containing the datatypes you like, followed by a semicolon
-        int poperty_one,
-        int property_two,
-        char property_three,
-        bool property_four
+    //The following members are public by default
+        int poperty_one;
+        int property_two;
+        char property_three;
+        bool property_four;
         //...
+    private:
+    // The following members are private
+        int private_property_one;
     };
 
 ### Using a structure 
